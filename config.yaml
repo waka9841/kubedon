@@ -35,28 +35,28 @@ data:
 
   # E-mail configuration
   # Note: Mailgun and SparkPost (https://sparkpo.st/smtp) each have good free tiers
-  # SMTP_SERVER:
-  # SMTP_PORT: "587"
-  # SMTP_LOGIN:
-  # SMTP_PASSWORD:
-  # SMTP_FROM_ADDRESS:
+  SMTP_SERVER: "smtp.sendgrid.net"
+  SMTP_PORT: "2525"
+  SMTP_LOGIN: "apikey"
+  SMTP_PASSWORD: "${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}"
+  SMTP_FROM_ADDRESS: "${waka9814@gmail.com}"
   # SMTP_DOMAIN:
   SMTP_AUTH_METHOD: plain
-  SMTP_OPENSSL_VERIFY_MODE: peer
+  SMTP_OPENSSL_VERIFY_MODE: none
   SMTP_ENABLE_STARTTLS_AUTO: "true"
+  SMTP_DELIVERY_METHOD: smtp
 
   # Optional asset host for multi-server setups
   # CDN_HOST: assets.example.com
 
   # S3 (optional)
-  # S3_ENABLED: "true"
-  # S3_BUCKET:
-  # AWS_ACCESS_KEY_ID:
-  # AWS_SECRET_ACCESS_KEY:
-  # S3_REGION:
-  # S3_PROTOCOL: http
-  # S3_HOSTNAME: 192.168.1.123:9000
-
+  S3_ENABLED: "true"
+  S3_BUCKET: "${mastodonbucket}"
+  AWS_ACCESS_KEY_ID: "${GOOGNKF6ZWEH4AS6HJ6PB7}"
+  AWS_SECRET_ACCESS_KEY: "${OMO0CkEMgITuf452FTkfl6IPkJXbPmY12qlhql4r}"
+  S3_PROTOCOL: https
+  S3_HOSTNAME: storage.googlespis.com
+  
   # S3 (Minio Config (optional) Please check Minio instance for details)
   # S3_ENABLED: "true"
   # S3_BUCKET:
@@ -65,7 +65,7 @@ data:
   # S3_REGION:
   # S3_PROTOCOL: https
   # S3_HOSTNAME: storage.googleapis.com
-  # S3_ENDPOINT: https://storage.googleapis.com
+  S3_ENDPOINT: https://storage.googleapis.com
 
   # Optional alias for S3 if you want to use Cloudfront or Cloudflare in front
   # S3_CLOUDFRONT_HOST:
