@@ -1,12 +1,5 @@
 # Kubedon
-<<<<<<< HEAD
-#a
-=======
-# ------
 
->>>>>>> 8857be3685d9517ba57a0b51651c9f15d7323481
-
-#asssaa
 A [Mastodon](https://github.com/tootsuite/mastodon) conf for Kubernetes / Google Container Engine.
 
 ## Prerequisite: Generating Secrets
